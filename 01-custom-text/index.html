@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Text jQuery plugin</title>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery.customtext.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="greeting"></div>
+  <script type="text/javascript">
+    $( document ).ready(function() {
+      $('#greeting').customtext({
+          name: 'Tu Nguyen'
+      });
+    });
+  </script>
+
+</body>
+</html>
