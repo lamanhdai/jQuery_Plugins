@@ -11,5 +11,5 @@
     //02- Apply options to DOM element
     return this.append('Welcome ' + settings.name + ' to Admin dashboard!').css({ background: settings.background }).css({ color: settings.color });
 
-  }; 
+  };
 }( jQuery ));
