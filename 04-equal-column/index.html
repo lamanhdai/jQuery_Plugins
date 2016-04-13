@@ -4,10 +4,16 @@
 	<meta charset="UTF-8">
 	<title>jQuery Simple Slideshow plugin</title>
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../highlighter/dessert.css" />
 </head>
 <body>
   <div class="container">
 	  <h1>Set Equal Height of list item</h1>
+    <pre class="prettyprint">
+      $(document).ready(function() {
+        $('.fruits').equalColumn();
+      });
+    </pre>
     <ul class="fruits">
        <li>
          <p>Fruit</p>
@@ -47,14 +53,11 @@
   <!-- /.container --></div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <!-- <script src="js/equalColumn.js" type="text/javascript"></script> -->
   <script src="js/jquery.equalColumn.js" type="text/javascript"></script>
-  <script src="http://www.designchemical.com/lab/jquery/demo/js/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+  <script src="highlighter/prettify.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
-      $('.fruits').helloWorld({
-
-      });
+      $('.fruits').equalColumn();
     });
   </script>
 

@@ -4,6 +4,7 @@
 /* 1- Variables Default */
 $font-stack: Helvetica, sans-serif;
 $main-color: #000000;
+$focus-color: #34495e;
 $heading-color: #1abc9c;
 $heading-background: #34495e;
 
@@ -29,12 +30,15 @@ $board-color: #ffffff;
 
 /* Common Style */
 p { margin: 0; }
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h3 { 
   @include center-content
   background: $heading-background;
   color: $heading-color;
   @include border-radius(10px);
   padding: 10px;
+}
+h4 {
+  color: $focus-color;
 }
 .box { @include border-radius(5px);}
 
@@ -54,5 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   #jquery-collection
 ----------------------------------------*/
 #jquery-collection ol > li {
-  margin: 5px 0;
+  margin: 10px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
 }

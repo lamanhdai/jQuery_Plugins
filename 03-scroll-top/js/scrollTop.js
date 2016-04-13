@@ -21,7 +21,8 @@
      * smoothScroll
      */
     function smoothScroll() {
-      $('#backtop a, .backtop a').on("click", function(event){
+      $('#backtop, .backtop').on("click", function(event){
+        console.log('testup');
         event.preventDefault();
         var h = $(this).attr("href");
         var t = $(h == "#" || h === "" ? 'body' : h);

@@ -3,7 +3,7 @@
 */
 
 (function($){
-    $.scrollToTop = function(selector, settings){
+  $.scrollToTop = function(selector, settings){
 		// settings
 		var config = {
 			'speed': 500

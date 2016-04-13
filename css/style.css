@@ -9,7 +9,7 @@ p {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   text-align: center;
   margin: 0;
   background: #34495e;
@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
   -ms-border-radius: 10px;
   border-radius: 10px;
   padding: 10px;
+}
+
+h4 {
+  color: #34495e;
 }
 
 .box {
@@ -45,5 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   #jquery-collection
 ----------------------------------------*/
 #jquery-collection ol > li {
-  margin: 5px 0;
+  margin: 10px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
 }
