@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Detect PC&amp;SP</title>
+	<title>jQuery Background Size</title>
   <link rel="stylesheet" href="../highlighter/dessert.css" />
   <!-- Optional theme -->
   <!-- Latest compiled and minified CSS -->
@@ -24,7 +24,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="/jquery-collection/">jQuery Collection</a></li>
-          <li class="active"><a href="/jquery-collection/18-detect-pc-sp/index.html">Detect PC&amp;SP</a></li>
+          <li class="active"><a href="/jquery-collection/19-jquery-background-size/index.html">jQuery Background Size</a></li>
         </ul>
       </div>
     </div>
@@ -32,57 +32,23 @@
 
   <div class="jumbotron">
     <div class="container text-center">
-      <h1 id="top">Detect PC&amp;SP</h1>
-      <p>We have 2 source for one website: PC and SP</p>
-      <ul>
-        <li>When we access website via PC: it goes to PC source</li>
-        <li>When we access website via Mobile: it goes to SP source</li>
-      </ul>
+      <h1 id="top">jQuery Background Size</h1>
+      <p>We should add jQuery Background size fix for IE8</p>
+      <p>We use jQuery: "backgroundSize" A jQuery cssHook adding support for "cover" and "contain" to IE6,7,8</p>
     </div>
   </div>
   
-  <div class="container-fluid">
-    
-    <p>Use .htaccess for check UserAgent</p>
-    <figure class="highlight">
-      <pre>
-        <code class="language-html" data-lang="html">
-         <IfModule mod_rewrite.c>
-            RewriteEngine on
+  <div class="content">
+    <div id="introduction">
 
-            RewriteBase /
-            RewriteCond %{REQUEST_URI} !/sp/
-            RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
-            RewriteRule ^(.*)$ sp/$1 [R]
-            
-          </IfModule>
-
-        </code>
-      </pre>
-    </figure>
-    <p>Better method - check location.hostname with jQuery</p>
-    <figure class="highlight">
-      <pre>
-        <code class="language-html" data-lang="html">
-           function externalOther() {
-              $('a[class="external"], a[href^="http"]').on("click", function() {
-                var targetHerf = $(this).attr('href');
-                if( targetHerf.search( location.hostname ) > 0 && targetHerf.search('.pdf') < 0 ) {
-                  $(this).attr("target", "_self");
-                } else {
-                  $(this).attr("target", "_blank");
-                }
-              });
-            }
-        </code>
-      </pre>
-    </figure>
+    <!-- /#introduction --></div>
   <!-- /.container-fluid --></div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="js/jquery.externalLink.js" type="text/javascript"></script>
+  <script src="js/jquery.backgroundSize.js" type="text/javascript"></script>
+  <script src="js/index.js" type="text/javascript"></script>
   <script src="../highlighter/prettify.js"></script>
 </body>
 </html>

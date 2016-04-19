@@ -21,3 +21,13 @@ html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fi
   float: left;
   padding: 0 20px;
 }
+#introduction {
+  width: 100%;
+  min-width: 980px;
+  height: 720px;
+  background: url(../img/bg-main_visual.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
