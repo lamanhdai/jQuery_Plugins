@@ -21,49 +21,24 @@ html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fi
   float: left;
   padding: 0 20px;
 }
-/* book_list */
-.book_list li img {
-  width: 100%;
-  height: auto;
+
+.footer_menu li.col_item:last-child {
+  margin-right: 0;
 }
-.book_list li img {
-  width: 100%;
-  height: auto;
-}
-.book_list li {
-  list-style-type: none;
-  position: inherit;
-}
-.book_list li .popup_content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10000;
-  margin-left: -480px;
-  background: #fff;
-  display: none;
-}
-.book_list li .popup_content .popup_inner {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  width: 900px;
-}
-.book_list li .popup_content .closePopup {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.overlay {
-  width: 100%;
-  height: 100%;
-  background: #000;
-  z-index: 5000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
+.footer_menu .col_item {
+  float: left;
+  width: 21%;
+  margin-right: 5.33%;
 }
 @media screen and (max-width: 767px) {
-  
+  .footer_menu .col_item {
+    float: none;
+    width: 100%;
+  }
+  .footer_menu .col_item dt.active + dd {
+    display: block;
+  }
+  .footer_menu .col_item dd {
+    display: none;
+  }
 }
