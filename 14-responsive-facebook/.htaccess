@@ -1,6 +1,0 @@
-RewriteEngine on
-
-RewriteBase /
-RewriteCond %{REQUEST_URI} !/sp/
-RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
-RewriteRule ^(.*)$ sp/$1 [R]
