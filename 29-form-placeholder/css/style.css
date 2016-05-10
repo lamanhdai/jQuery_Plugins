@@ -1,0 +1,66 @@
+html{overflow-y:scroll;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}table{border-collapse:collapse;border-spacing:0;}caption,th{text-align:left;}q:before,q:after{content:'';}object,embed{vertical-align:top;}hr,legend{display:none;}h1,h2,h3,h4,h5,h6{font-size:100%;}img,abbr,acronym,fieldset{border:0;}ul li{list-style-type:none;}a,label{cursor:pointer;}img{vertical-align:bottom;margin:0;padding:0;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+.navbar-inverse .navbar-toggle {
+    border-color: #333;
+}
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+.container {
+  overflow: hidden;
+  clear: both;
+  margin: 0 auto;
+}
+#header {
+  width: 100%;
+}
+#header ul {
+  overflow: hidden;
+}
+#header ul li {
+  float: left;
+  padding: 0 20px;
+}
+.box_search {
+  float: left;
+}
+.box_search input {
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  border: none;
+  width: 770px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  margin: 0;
+  padding: 15px 20px 15px 30px;
+  font-size: 134%;
+  outline: none;
+  display: block;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
+.btn_search {
+  float: left;
+}
+.btn_search input {
+  border: none;
+  width: 140px;
+  min-width: inherit;
+  height: 50px;
+  color: #0000000;
+  background: #ffd200;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  outline: none;
+  display: block;
+  font-weight: bold;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  cursor: pointer;
+}
+.btn_search input:hover {
+  background: #ffd200;
+}
